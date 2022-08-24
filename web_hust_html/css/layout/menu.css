@@ -1,0 +1,30 @@
+.menu {
+    width: 225px;
+    flex-shrink: 225px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu__item:hover {
+    background-color: #e5e5e5;
+}
+
+.menu__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.menu__text {
+    margin-left: 10px;
+}

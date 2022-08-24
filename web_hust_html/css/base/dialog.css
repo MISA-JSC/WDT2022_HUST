@@ -1,0 +1,95 @@
+.dialog {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.dialog__content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.dialog__header {
+    border-radius: 4px;
+    padding: 24px 24px 0 24px;
+}
+
+.dialog__body {
+    padding: 24px;
+}
+
+.dialog__msg-item {
+    display: flex;
+    align-items: center;
+    background-size: 16px;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/icon/warning.png);
+    padding-left: 24px;
+}
+
+.dialog__msg-item~.dialog__msg-item {
+    margin-top: 8px;
+}
+
+.dialog__footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding: 8px 24px;
+    border-radius: 0 0 4px 4px;
+    flex-direction: row-reverse;
+}
+
+.dialog__footer button~button {
+    margin-right: 8px;
+}
+
+.dialog__footer .button--cancel {
+    background-color: unset;
+    color: #000;
+}
+
+.dialog__footer .button--cancel:hover,
+.button--cancel:focus {
+    background-color: #ccc;
+}
+
+.dialog__button--close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 4px 0 4px;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    background-image: url(../../assets/icon/x.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(20%) sepia(100%) saturate(3000%)
+}
+
+.dialog__button--close:hover {
+    background-color: #dedede;
+    filter: unset
+    /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); */
+}

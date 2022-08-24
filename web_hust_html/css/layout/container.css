@@ -1,0 +1,17 @@
+/* .container {
+    display: grid;
+    grid-template-columns: 225px calc(100% - 225px);
+    grid-template-rows: 50px calc(100vh - 50px);
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 50px);
+    width: 100%;
+}

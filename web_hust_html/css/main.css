@@ -1,0 +1,163 @@
+@import url(./base/button.css);
+@import url(./base/combobox.css);
+@import url(./base/input.css);
+@import url(./base/table.css);
+@import url(./layout/content.css);
+@import url(./layout/header.css);
+@import url(./layout/menu.css);
+@import url(./layout/container.css);
+@import url(./base/icon.css);
+@import url(./base/dialog.css);
+@font-face {
+    font-family: MISA Fonts;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+    font-family: MISA Font Bold;
+    src: url(../assets/font/GoogleSans-Bold.otf);
+}
+
+@font-face {
+    font-family: MISA Font Italic;
+    src: url(../assets/font/GoogleSans-Italic.otf);
+}
+
+@media screen and (max-width:1024px) {
+    .menu {
+        display: none
+    }
+}
+
+.heading {
+    font-family: MISA Font Bold;
+    font-size: 24px;
+}
+
+.title {
+    font-family: MISA Font Bold;
+    font-size: 20px;
+}
+
+body {
+    font-family: MISA Fonts;
+    font-size: 13px;
+    color: #454545;
+    margin: 0;
+    min-width: 1024px;
+}
+
+.m-row {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 4px 0;
+    /* max-width: 200px; */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-50 {
+    flex-basis: 50%;
+}
+
+.col~.col {
+    margin-left: 10px;
+}
+
+.row~.row {
+    margin-top: 8px;
+}
+
+label~* {
+    margin-top: 4px;
+}
+
+
+/* Căn chỉnh text */
+
+.text-align--left {
+    text-align: left;
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+.text-align--right {
+    text-align: right;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #4545459b;
+}
+
+.loading__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading__icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-top: 8px solid rgb(0, 142, 31);
+    border-left: 8px solid rgb(0, 142, 31);
+    border-bottom: 8px solid #fff;
+    border-right: 8px solid #fff;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.loading__text {
+    color: #fff;
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.border-red {
+    border: 1px solid #ff0000;
+}

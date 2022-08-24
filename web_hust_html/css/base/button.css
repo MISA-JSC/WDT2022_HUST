@@ -1,0 +1,34 @@
+.button {
+    background-color: #019160;
+    border-radius: 4px;
+    height: 40px;
+    color: #fff;
+    padding: 0 24px 0 24px;
+    text-align: center;
+    border: none;
+    min-width: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #2fbe8e;
+}
+
+.button:active {
+    background-color: #01b175;
+}
+
+.button__icon {
+    padding: 0 16px;
+    background-repeat: no-repeat;
+    background-position-x: 16px;
+    background-position-y: center;
+    background-size: 16px 16px;
+    padding-left: 40px;
+}
+
+.button__icon--employee {
+    background-image: url(../../assets/icon/add.png);
+}
